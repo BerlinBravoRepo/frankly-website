@@ -107,5 +107,20 @@ h3 { font-size: 19px; margin-bottom: 8px; }
 .legal a { color: var(--text); text-decoration: underline; }
 .brand a { color: inherit; }
 
+.lang { border: 1px solid #3a3a40; border-radius: 999px; padding: 6px 12px; font-size: 13px; font-weight: 700; color: var(--muted); }
+.lang:hover { color: var(--text); }
+
+.android { text-align: center; }
+.android p { color: var(--muted); max-width: 620px; margin: 0 auto 26px; }
+.interest { max-width: 460px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; text-align: left; }
+.interest input, .interest textarea {
+  background: var(--panel); border: 1px solid #2a2a30; border-radius: 12px;
+  padding: 14px; color: var(--text); font-size: 15px; font-family: inherit;
+}
+.interest textarea { min-height: 80px; resize: vertical; }
+.interest input::placeholder, .interest textarea::placeholder { color: #6b6b73; }
+.interest .btn { border: none; cursor: pointer; margin-top: 4px; }
+.formnote { color: var(--muted); font-size: 13px; text-align: center; margin-top: 6px; }
+
 footer { border-top: 1px solid #232327; padding: 28px; text-align: center; color: var(--muted); font-size: 14px; }
 footer a { color: var(--text); }

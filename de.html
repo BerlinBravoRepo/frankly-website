@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frankly — das Leben deiner Familie, an einem Ort</title>
+  <meta name="description" content="Frankly bewahrt das medizinische, schulische und alltägliche Leben deiner Familie an einem Ort auf — in deinem eigenen Speicher, mit deiner eigenen KI. Füg alles hinzu und frag einfach." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><a href="de.html"><span class="logo">F</span> Frankly</a></div>
+    <nav>
+      <a href="#how">So funktioniert's</a>
+      <a href="#who">Für wen</a>
+      <a href="#privacy">Datenschutz</a>
+      <a class="btn btn-small" href="#get">Beta holen</a>
+      <a class="lang" href="index.html">EN</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Das Leben deiner Familie, an einem Ort —<br><u>deine</u> Daten und <u>deine</u> KI.</h1>
+    <p class="sub">Rezepte, Schulwege, Feriencamp-Termine, der Plan, der sich täglich ändert. Füg alles hinzu und frag einfach. Frankly speichert alles in deiner eigenen iCloud und läuft mit deinem eigenen KI-Schlüssel — nichts läuft über uns.</p>
+    <div class="cta">
+      <a class="btn" href="#get">Der TestFlight-Beta beitreten</a>
+      <a class="btn btn-ghost" href="#how">So funktioniert's</a>
+    </div>
+  </section>
+
+  <section class="shots" id="how">
+    <h2>So funktioniert's</h2>
+    <div class="shot-grid">
+      <figure class="phone">
+        <img src="screenshots/welcome.png" alt="Willkommen bei Frankly" onerror="this.parentNode.classList.add('placeholder')" />
+        <figcaption>Das Leben deiner Familie an einem Ort — deine Daten, deine KI.</figcaption>
+      </figure>
+      <figure class="phone">
+        <img src="screenshots/setup.png" alt="Gespräch zur Einrichtung" onerror="this.parentNode.classList.add('placeholder')" />
+        <figcaption>Ein herzliches Einrichten — Frankly lernt deine Familie im Gespräch kennen, nicht über Formulare.</figcaption>
+      </figure>
+      <figure class="phone">
+        <img src="screenshots/chat.png" alt="Chat mit Frankly" onerror="this.parentNode.classList.add('placeholder')" />
+        <figcaption>Frag alles. Frankly antwortet aus den Aufzeichnungen deiner Familie.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="who" id="who">
+    <h2>Für wen Frankly ist</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="ic">👨‍👧</div>
+        <h3>Für den täglichen Familien-Wahnsinn</h3>
+        <p>Jeder Tag ist anders. Wer hat Training, wer muss abgeholt werden, was muss eingepackt werden. Einmal hinzufügen und einfach fragen — mit einer kurzen Übersicht an jedem Morgen.</p>
+      </div>
+      <div class="card">
+        <div class="ic">❤️</div>
+        <h3>Für die Menschen, um die du dich kümmerst</h3>
+        <p>Halte Termine, Rezepte und die Krankengeschichte eines älteren Elternteils an einem Ort fest. Beim Arzt lässt du Frankly direkt antworten — genau, in den eigenen Worten deines Elternteils.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🔒</div>
+        <h3>Privat von Grund auf</h3>
+        <p>Das Leben deiner Familie liegt in deinem eigenen Speicher und läuft mit deinem eigenen KI-Schlüssel. Nichts läuft über unsere Server.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy" id="privacy">
+    <h2>Dein Speicher. Deine KI.</h2>
+    <p>Frankly hat keine Server dazwischen. Deine Aufzeichnungen bleiben in deiner eigenen iCloud, und jede Antwort wird von deinem eigenen OpenAI-, Gemini- oder Claude-Schlüssel erzeugt. Du bist nie gebunden, und die Informationen deiner Familie sehen wir nie.</p>
+  </section>
+
+  <section class="getkey" id="getkey">
+    <h2>So bekommst du deinen KI-Schlüssel</h2>
+    <p class="apology">Einen Schlüssel zu bekommen ist etwas umständlich — das tut uns leid, und wir würden es gern einfacher machen. Wir können es nicht, denn der Schlüssel sorgt dafür, dass Frankly mit <strong>deiner eigenen KI, unter deiner Kontrolle</strong> läuft, ohne dass etwas über uns läuft. Es ist eine einmalige Einrichtung, und du brauchst nur einen für die ganze Familie.</p>
+    <div class="keys">
+      <div class="keycard">
+        <h3>Google Gemini <span class="free">Kostenlos</span></h3>
+        <ol>
+          <li>Öffne <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a> und melde dich mit Google an.</li>
+          <li>Tippe auf <em>API-Schlüssel erstellen</em> → wähle „Default Gemini Project“.</li>
+          <li>Kopiere den Schlüssel und füge ihn in Frankly ein.</li>
+        </ol>
+        <figure class="ss"><img src="screenshots/key-gemini.png" alt="Gemini-Schlüssel holen" onerror="this.parentNode.classList.add('placeholder')"><figcaption>Gemini-Schlüsselseite</figcaption></figure>
+      </div>
+      <div class="keycard">
+        <h3>OpenAI <span class="paid">Kostenpflichtig</span></h3>
+        <ol>
+          <li>Öffne <a href="https://platform.openai.com/api-keys">platform.openai.com</a> und melde dich an.</li>
+          <li>Tippe auf <em>Create new secret key</em> und kopiere ihn.</li>
+          <li>Füge ihn in Frankly ein. (Benötigt etwas Guthaben auf deinem Konto.)</li>
+        </ol>
+        <figure class="ss"><img src="screenshots/key-openai.png" alt="OpenAI-Schlüssel holen" onerror="this.parentNode.classList.add('placeholder')"><figcaption>OpenAI-Schlüsselseite</figcaption></figure>
+      </div>
+      <div class="keycard">
+        <h3>Anthropic Claude <span class="paid">Kostenpflichtig</span></h3>
+        <ol>
+          <li>Öffne <a href="https://console.anthropic.com/settings/keys">console.anthropic.com</a> und melde dich an.</li>
+          <li>Tippe auf <em>Create Key</em> und kopiere ihn.</li>
+          <li>Füge ihn in Frankly ein. (Benötigt etwas Guthaben auf deinem Konto.)</li>
+        </ol>
+        <figure class="ss"><img src="screenshots/key-claude.png" alt="Claude-Schlüssel holen" onerror="this.parentNode.classList.add('placeholder')"><figcaption>Claude-Schlüsselseite</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="get" id="get">
+    <h2>Die Beta testen</h2>
+    <p class="beta-note"><strong>Wenn du Declan kennst</strong>, installiere Apples <strong>TestFlight</strong>-App, damit er dir einen Link zur Testversion schicken kann.</p>
+    <ol class="beta-steps">
+      <li>Installiere <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a> aus dem App Store.</li>
+      <li>Frag Declan nach deinem Einladungslink (oder tippe auf den Link, den er dir schickt).</li>
+      <li>Öffne ihn in TestFlight und tippe auf <em>Installieren</em> — fertig.</li>
+    </ol>
+    <div class="cta">
+      <a class="btn" href="TESTFLIGHT_LINK_HERE">TestFlight-Einladung öffnen</a>
+      <a class="btn btn-ghost disabled" href="#" aria-disabled="true">Im App Store — bald verfügbar</a>
+    </div>
+  </section>
+
+  <section class="android" id="android">
+    <h2>Android später?</h2>
+    <p>Im Moment entwickeln wir Frankly nur für das iPhone. Wenn du eine Android-Version möchtest, erzähl uns etwas über dein Telefon und wir halten dich auf dem Laufenden — bei genug Interesse bauen wir sie.</p>
+    <form class="interest" onsubmit="return sendAndroid(event)">
+      <input id="aName" placeholder="Dein Name" required />
+      <input id="aEmail" type="email" placeholder="Deine E-Mail" required />
+      <input id="aPhone" placeholder="Marke &amp; Modell deines Telefons (z. B. Samsung Galaxy S24)" required />
+      <input id="aAndroid" placeholder="Android-Version, falls bekannt (optional)" />
+      <textarea id="aNotes" placeholder="Sonst noch etwas, das hilft (optional)"></textarea>
+      <button type="submit" class="btn">Interesse anmelden</button>
+      <p class="formnote">Damit öffnet sich deine E-Mail-App mit den Angaben, bereit zum Senden an hello@berlinbravo.com.</p>
+    </form>
+  </section>
+
+  <footer>
+    <p>Du testest Frankly? <a href="mailto:hello@berlinbravo.com?subject=Frankly%20Feedback">Sag uns deine Meinung</a> — wir freuen uns über dein Feedback.</p>
+    <p>Frankly — von BerlinBravo. <a href="mailto:hello@berlinbravo.com">hello@berlinbravo.com</a> · <a href="privacy.html">Datenschutz</a> · <a href="index.html">English</a></p>
+  </footer>
+
+  <script>
+    function sendAndroid(e) {
+      e.preventDefault();
+      var v = function (id) { return document.getElementById(id).value; };
+      var body = "Name: " + v('aName') + "\nE-Mail: " + v('aEmail') +
+        "\nMarke & Modell: " + v('aPhone') +
+        "\nAndroid-Version: " + v('aAndroid') +
+        "\nNotizen: " + v('aNotes');
+      window.location.href = "mailto:hello@berlinbravo.com?subject=" +
+        encodeURIComponent("Frankly — Android-Interesse") +
+        "&body=" + encodeURIComponent(body);
+      return false;
+    }
+  </script>
+</body>
+</html>

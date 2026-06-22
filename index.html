@@ -15,6 +15,7 @@
       <a href="#who">Who it's for</a>
       <a href="#privacy">Privacy</a>
       <a class="btn btn-small" href="#get">Get the beta</a>
+      <a class="lang" href="de.html">DE</a>
     </nav>
   </header>
 
@@ -122,9 +123,38 @@
     </div>
   </section>
 
+  <section class="android" id="android">
+    <h2>Android coming later?</h2>
+    <p>Right now we're building Frankly for iPhone only. If you'd like an Android version, tell us a little about your phone and we'll keep you posted — enough interest and we'll build it.</p>
+    <form class="interest" onsubmit="return sendAndroid(event)">
+      <input id="aName" placeholder="Your name" required />
+      <input id="aEmail" type="email" placeholder="Your email" required />
+      <input id="aPhone" placeholder="Phone make &amp; model (e.g. Samsung Galaxy S24)" required />
+      <input id="aAndroid" placeholder="Android version, if you know it (optional)" />
+      <textarea id="aNotes" placeholder="Anything else that would help (optional)"></textarea>
+      <button type="submit" class="btn">Register interest</button>
+      <p class="formnote">This opens your email app with the details ready to send to hello@berlinbravo.com.</p>
+    </form>
+  </section>
+
   <footer>
     <p>Testing Frankly? <a href="mailto:hello@berlinbravo.com?subject=Frankly%20feedback">Tell us what you think</a> — we'd love your feedback.</p>
-    <p>Frankly — by BerlinBravo. <a href="mailto:hello@berlinbravo.com">hello@berlinbravo.com</a> · <a href="privacy.html">Privacy</a></p>
+    <p>Frankly — by BerlinBravo. <a href="mailto:hello@berlinbravo.com">hello@berlinbravo.com</a> · <a href="privacy.html">Privacy</a> · <a href="de.html">Deutsch</a></p>
   </footer>
+
+  <script>
+    function sendAndroid(e) {
+      e.preventDefault();
+      var v = function (id) { return document.getElementById(id).value; };
+      var body = "Name: " + v('aName') + "\nEmail: " + v('aEmail') +
+        "\nPhone make & model: " + v('aPhone') +
+        "\nAndroid version: " + v('aAndroid') +
+        "\nNotes: " + v('aNotes');
+      window.location.href = "mailto:hello@berlinbravo.com?subject=" +
+        encodeURIComponent("Frankly — Android interest") +
+        "&body=" + encodeURIComponent(body);
+      return false;
+    }
+  </script>
 </body>
 </html>
