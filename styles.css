@@ -77,6 +77,21 @@ h3 { font-size: 19px; margin-bottom: 8px; }
 .privacy { text-align: center; }
 .privacy p { color: var(--muted); max-width: 680px; margin: 0 auto; font-size: 17px; }
 
+.getkey .apology { color: var(--muted); max-width: 680px; margin: 0 auto 30px; text-align: center; }
+.keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.keycard { background: var(--panel); border: 1px solid #26262b; border-radius: 18px; padding: 24px; }
+.keycard h3 { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.keycard .free, .keycard .paid { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.keycard .free { color: #0b0b0c; background: #5fd08a; }
+.keycard .paid { color: var(--muted); border: 1px solid #3a3a40; }
+.keycard ol { color: var(--muted); padding-left: 20px; line-height: 1.8; margin-bottom: 14px; }
+.keycard a { color: var(--text); text-decoration: underline; }
+.ss { border: 1px solid #26262b; border-radius: 12px; padding: 8px; }
+.ss img { width: 100%; border-radius: 8px; display: block; }
+.ss.placeholder img { display: none; }
+.ss.placeholder { aspect-ratio: 16 / 10; display: flex; align-items: flex-end; justify-content: center; background: repeating-linear-gradient(135deg, #161618, #161618 12px, #19191c 12px, #19191c 24px); }
+.ss figcaption { color: var(--muted); font-size: 13px; text-align: center; margin-top: 8px; }
+
 .get { text-align: center; }
 .get p { color: var(--muted); margin-bottom: 18px; }
 .beta-note { color: var(--text); font-size: 18px; max-width: 560px; margin: 0 auto 18px; }
