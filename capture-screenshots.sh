@@ -26,19 +26,22 @@ xcrun simctl boot "$UDID" 2>/dev/null || true
 xcrun simctl bootstatus "$UDID" -b >/dev/null 2>&1
 xcrun simctl install "$UDID" "$APP"
 
-cap () { # filename, then AppStorage bool keys to preset
-  local name="$1"; shift
+xcrun simctl ui "$UDID" appearance dark >/dev/null 2>&1   # on-brand dark shots
+
+cap () { # filename  shot-mode   (shot-mode read by the app via FRANKLY_SHOT)
+  local name="$1"; local shot="$2"
   xcrun simctl terminate "$UDID" "$BID" >/dev/null 2>&1 || true
-  xcrun simctl spawn "$UDID" defaults delete "$BID" >/dev/null 2>&1 || true
-  for k in "$@"; do xcrun simctl spawn "$UDID" defaults write "$BID" "$k" -bool YES >/dev/null 2>&1; done
-  xcrun simctl launch "$UDID" "$BID" >/dev/null 2>&1
+  SIMCTL_CHILD_FRANKLY_SHOT="$shot" xcrun simctl launch "$UDID" "$BID" >/dev/null 2>&1
   sleep 14   # wait out cold-launch + the home->app transition before grabbing
   xcrun simctl io "$UDID" screenshot "$OUT/$name" >/dev/null 2>&1
-  echo "  $name"
+  echo "  $name ($shot)"
 }
 
 echo "Capturing…"
-cap welcome.png
-cap setup.png hasSeenWelcome hasOnboarded
-cap chat.png hasSeenWelcome hasOnboarded hasMetFamily
+cap welcome.png    welcome
+cap setup.png      setup
+cap chat.png       chat
+cap files.png      files
+cap family.png     family
+cap menu.png       drawer
 echo "Done -> $OUT"
