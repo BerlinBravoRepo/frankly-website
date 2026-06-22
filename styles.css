@@ -39,6 +39,7 @@ u { text-decoration: underline; text-underline-offset: 3px; }
 .btn {
   display: inline-block; background: var(--accent); color: #000;
   padding: 12px 22px; border-radius: 999px; font-weight: 600; font-size: 15px;
+  white-space: nowrap;
   transition: transform .08s ease, opacity .15s ease;
 }
 .btn:hover { transform: translateY(-1px); }
@@ -124,3 +125,14 @@ h3 { font-size: 19px; margin-bottom: 8px; }
 
 footer { border-top: 1px solid #232327; padding: 28px; text-align: center; color: var(--muted); font-size: 14px; }
 footer a { color: var(--text); }
+
+/* Mobile: keep the nav on one tidy row — hide the in-page anchor links (the page
+   scrolls anyway), keep brand · Get the beta · language. */
+@media (max-width: 640px) {
+  .nav { padding: 14px 16px; }
+  .nav nav { gap: 12px; }
+  .nav nav a:not(.btn):not(.lang) { display: none; }
+  .brand { font-size: 18px; }
+  h1 { font-size: clamp(26px, 8vw, 40px); }
+  section { padding: 56px 22px; }
+}
