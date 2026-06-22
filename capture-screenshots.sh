@@ -22,6 +22,7 @@ xcodebuild -project "$APPDIR/Frankly.xcodeproj" -scheme Frankly \
 APP=$(ls -d "$HOME"/Library/Developer/Xcode/DerivedData/Frankly-*/Build/Products/Debug-iphonesimulator/Frankly.app | head -1)
 UDID=$(xcrun simctl list devices available | grep -oE "iPhone 1[567][^(]*\([0-9A-F-]{36}\)" | head -1 | grep -oE "[0-9A-F-]{36}")
 echo "Sim $UDID"
+open -a Simulator   # bring the Simulator GUI to the foreground so it renders frames (headless capture grabs the launch animation instead)
 xcrun simctl boot "$UDID" 2>/dev/null || true
 xcrun simctl bootstatus "$UDID" -b >/dev/null 2>&1
 xcrun simctl install "$UDID" "$APP"
@@ -39,6 +40,7 @@ cap () { # filename  shot-mode   (shot-mode read by the app via FRANKLY_SHOT)
 
 echo "Capturing…"
 cap welcome.png    welcome
+cap welcome2.png   welcome2
 cap onboarding.png onboarding
 cap setup.png      setup
 cap chat.png       chat
