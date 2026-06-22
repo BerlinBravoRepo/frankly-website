@@ -133,13 +133,13 @@
       <input id="aAndroid" placeholder="Android version, if you know it (optional)" />
       <textarea id="aNotes" placeholder="Anything else that would help (optional)"></textarea>
       <button type="submit" class="btn">Register interest</button>
-      <p class="formnote">This opens your email app with the details ready to send to hello@berlinbravo.com.</p>
+      <p class="formnote">This opens your email app with the details ready to send to frankly@berlinbravo.com.</p>
     </form>
   </section>
 
   <footer>
-    <p>Testing Frankly? <a href="mailto:hello@berlinbravo.com?subject=Frankly%20feedback">Tell us what you think</a> — we'd love your feedback.</p>
-    <p>Frankly — by BerlinBravo. <a href="mailto:hello@berlinbravo.com">hello@berlinbravo.com</a> · <a href="privacy.html">Privacy</a> · <a href="de.html">Deutsch</a></p>
+    <p>Testing Frankly? <a href="mailto:frankly@berlinbravo.com?subject=Frankly%20feedback">Tell us what you think</a> — we'd love your feedback.</p>
+    <p>Frankly — by BerlinBravo. <a href="mailto:frankly@berlinbravo.com">frankly@berlinbravo.com</a> · <a href="privacy.html">Privacy</a> · <a href="de.html">Deutsch</a></p>
   </footer>
 
   <script>
@@ -150,7 +150,7 @@
         "\nPhone make & model: " + v('aPhone') +
         "\nAndroid version: " + v('aAndroid') +
         "\nNotes: " + v('aNotes');
-      window.location.href = "mailto:hello@berlinbravo.com?subject=" +
+      window.location.href = "mailto:frankly@berlinbravo.com?subject=" +
         encodeURIComponent("Frankly — Android interest") +
         "&body=" + encodeURIComponent(body);
       return false;
