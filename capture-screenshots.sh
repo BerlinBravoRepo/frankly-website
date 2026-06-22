@@ -39,6 +39,7 @@ cap () { # filename  shot-mode   (shot-mode read by the app via FRANKLY_SHOT)
 
 echo "Capturing…"
 cap welcome.png    welcome
+cap onboarding.png onboarding
 cap setup.png      setup
 cap chat.png       chat
 cap files.png      files
