@@ -80,6 +80,12 @@ h3 { font-size: 19px; margin-bottom: 8px; }
 .privacy p { color: var(--muted); max-width: 680px; margin: 0 auto; font-size: 17px; }
 
 .getkey .apology { color: var(--muted); max-width: 680px; margin: 0 auto 30px; text-align: center; }
+.getkey .steps { list-style: none; max-width: 620px; margin: 0 auto; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.getkey .step { display: flex; gap: 16px; align-items: flex-start; background: var(--panel); border: 1px solid #26262b; border-radius: 18px; padding: 20px 22px; text-align: left; }
+.getkey .badge { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 999px; background: #5fd08a; color: #0b0b0c; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+.getkey .step h3 { margin-bottom: 4px; }
+.getkey .step p { color: var(--muted); }
+.getkey .step a { color: var(--text); text-decoration: underline; }
 .keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 .keycard { background: var(--panel); border: 1px solid #26262b; border-radius: 18px; padding: 24px; }
 .keycard h3 { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
