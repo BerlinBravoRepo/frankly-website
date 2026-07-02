@@ -50,6 +50,7 @@ u { text-decoration: underline; text-underline-offset: 3px; }
 section { padding: 72px 28px; max-width: 1080px; margin: 0 auto; }
 h1 { font-size: clamp(30px, 6vw, 52px); line-height: 1.1; letter-spacing: -0.02em; }
 h2 { font-size: clamp(24px, 4vw, 34px); margin-bottom: 28px; letter-spacing: -0.01em; }
+.shots h2, .who h2, .getkey h2 { text-align: center; }
 h3 { font-size: 19px; margin-bottom: 8px; }
 
 .hero { text-align: center; padding-top: 80px; padding-bottom: 40px; }
